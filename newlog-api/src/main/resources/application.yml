@@ -1,0 +1,25 @@
+# 서버 설정 (생략 가능)
+server:
+    port: 8000
+# address: 0.0.0.0
+
+# 로컬 spring 설정
+spring:
+
+    # DB 연결정보 설정
+    datasource:
+        driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        url: jdbc:log4jdbc:mariadb://127.0.0.1/newlog
+        username: root
+        password: admin!testdb123
+
+# servlet 설정
+# servlet:
+#   # multipart 설정
+#   multipart:
+#     max-file-size: 100MB #파일의 최대 사이즈 (default: 1MB)
+#     max-request-size: 1000MB #요청의 최대 사이즈 (default: 10MB)
+
+# 파일업로드 경로
+# comm:
+#   uploadPath: /home/smartsafety/storage/safetyhealth/
